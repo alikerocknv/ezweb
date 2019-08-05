@@ -1,0 +1,75 @@
+@import url(myreset.css);
+
+/* ---------- common elements ---------- */
+body{
+    font-family: 'Roboto', sans-serif;    
+    background: #D6D8E1;
+}
+.main_title{
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+.sub_title{
+    font-size: 21px;
+    font-weight: 500;
+}
+a{
+    color: #3F539C;
+    text-decoration: none;
+}
+/* ---------- Main page ---------- */
+.main-header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1;
+}
+.main-header .header_inner{
+    height: 75px;
+    background:linear-gradient(#D95E46, #8C3D2D);
+    padding:0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header svg{
+    color: #fff;
+}
+.main-header h1{
+    color: #fff;
+}
+.main-header form{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    padding:10px 15px;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: space-between;
+    z-index:-1;
+    transition:top 0.5s ease-in-out;
+}
+.main-header form.active{
+    top:100%;
+}
+.main-header form input{
+    line-height: 27px;
+    width: calc(100% - 40px);
+    border-radius:4px;
+    border:none;
+}
+.main-header form button{
+    background:none;
+    border:none;
+    font-size: 21px;
+}
+
+
+/* ---------- aside ---------- */
+
+/* ---------- catogory ---------- */
+
+/* ---------- details ---------- */
