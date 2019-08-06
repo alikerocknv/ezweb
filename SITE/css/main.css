@@ -52,6 +52,7 @@ main{
     left:0;
     right:0;
     z-index:1;
+    transition:0.4s ease-in;
 }
 .main-header .header_inner{
     height: 75px;
@@ -181,13 +182,17 @@ main{
 aside{
     width: 85%;
     position: fixed;
-    left: 0;
+    left: -100%;
     top: 0;
     height: 100vh;
     background: #3F539C;
     z-index:11;
     display: flex;
     flex-direction:column;
+    transition:left 0.4s ease-in;
+}
+.aside-open aside{
+    left:0;
 }
 aside header{
     background: linear-gradient(#D95E46, #8C3D2D);
@@ -252,6 +257,19 @@ aside .aside_content > *{
     font-size: 12px;
     text-align: center;
     line-height: 18px;
+}
+body{
+    position:relative;
+    left:0;  
+    transition:left 0.4s ease-in;
+}
+body.aside-open{
+    left:85%;
+    position: fixed;
+}
+body.aside-open .main-header{
+    left:85%;
+    right:-85%;
 }
 /* ---------- catogory ---------- */
 

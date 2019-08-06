@@ -13,4 +13,19 @@ $(function(){
         }        
     });
 
+    //aside toggle
+    $body = $('body');
+    $asideToggleBtn = $('.aside_toggle');
+    $sideCloseBtn = $('.aside_bg');
+
+    $asideToggleBtn.click(function(){
+        $body.addClass('aside-open');
+    });
+    $sideCloseBtn.click(function(){
+        $body.removeClass('aside-open');
+    });
+
+
+
+
 });
