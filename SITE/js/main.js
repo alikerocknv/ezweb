@@ -25,7 +25,22 @@ $(function(){
         $body.removeClass('aside-open');
     });
 
+    //Categroy change view
+    var $listToggle = $('.list_toggle'),
+        $category = $('.category');
 
+    $listToggle.click(function(){
+        $(this).add($category).toggleClass('active');
+        //$('.list_toggle, .category').toggleClass('active');
+    })
+
+    //이전 페이지로 이동하기
+    var $backwardsBtn = $('.backwards_toggle');
+
+    $backwardsBtn.click(function(){
+        history.go(-1);
+        //history.go(1);  history.back(); history.forward();
+    });
 
 
 });
